@@ -1,4 +1,4 @@
-import reactRefresh from "eslint-plugin-react-refresh";
+import reactRefresh from "eslint-plugin-react-refresh"
 
 export default [
   {
@@ -15,6 +15,7 @@ export default [
       react: require("eslint-plugin-react"),
       reactHooks: require("eslint-plugin-react-hooks"),
       reactRefresh,
+      prettier: require("eslint-plugin-prettier"),
     },
     settings: {
       react: {
@@ -27,6 +28,7 @@ export default [
         { allowConstantExport: true },
       ],
       "react/prop-types": "off",
+      "prettier/prettier": "warn", // Add this rule
     },
   },
-];
+]
